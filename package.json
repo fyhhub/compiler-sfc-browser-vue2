@@ -14,7 +14,6 @@
   "license": "ISC",
   "dependencies": {
     "@babel/parser": "^7.23.0",
-    "@vue/compiler-sfc": "^2.7.15",
     "less": "^3.13.1",
     "postcss": "^8.4.31",
     "source-map-js": "^1.0.2"
