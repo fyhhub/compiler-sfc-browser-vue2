@@ -1,9 +1,9 @@
 {
-  "name": "compiler-vue2",
-  "version": "1.0.0",
+  "name": "vue2-compiler-sfc-browser",
+  "version": "0.0.1",
   "description": "",
-  "main": "./index.umd.js",
-  "module": "./index.esm.js",
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.esm.js",
   "typings": "./compiler-sfc.d.ts",
   "types": "./compiler-sfc.d.ts",
   "scripts": {
