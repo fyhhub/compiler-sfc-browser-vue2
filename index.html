@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script src="./dist/index.umd.js"></script>
+  <script>
+    console.log(window.VueCompiler);
+    const desc = window.VueCompiler.parse({
+      source: `
+      <template>
+        <mrp-cascader
+          :options="options"
+          default-value="datunli"
+          :style="{ width: '320px' }"
+          placeholder="Please select ..."
+          :format-label="format"
+        />
+      </template>
+      <script setup lang="ts">
+      const options = [
+        {
+          value: 'beijing',
+          label: 'Beijing',
+          children: [
+            {
+              value: 'chaoyang',
+              label: 'ChaoYang',
+              children: [
+                {
+                  value: 'datunli',
+                  label: 'Datunli',
+                },
+              ],
+            },
+            {
+              value: 'haidian',
+              label: 'Haidian',
+            },
+            {
+              value: 'dongcheng',
+              label: 'Dongcheng',
+            },
+            {
+              value: 'xicheng',
+              label: 'Xicheng',
+              children: [
+                {
+                  value: 'jinrongjie',
+                  label: 'Jinrongjie',
+                },
+                {
+                  value: 'tianqiao',
+                  label: 'Tianqiao',
+                },
+              ],
+            },
+          ],
+        },
+        {
+          value: 'shanghai',
+          label: 'Shanghai',
+          children: [
+            {
+              value: 'huangpu',
+              label: 'Huangpu',
+            },
+          ],
+        },
+      ];
+
+      const format = (options) => {
+        const labels = options.map((option) => option.label);
+        return labels.join('-');
+      };
+      <\/script>
+      <style lang="less" scoped>
+        @color: red;
+        div {
+          a {
+            color: @color;
+          }
+        }
+      <\/style>
+      `,
+    })
+    console.log("%c Line:13 🍏 desc", "color:#ea7e5c", desc);
+    const style = window.VueCompiler.compileStyle({
+      source: desc.styles[0].content,
+      id: '123',
+      preprocessLang: 'less'
+    })
+    console.log("style", style);
+
+    const script = window.VueCompiler.compileScript(desc, {
+      id: '123'
+    })
+    console.log("script", script);
+
+    const template = window.VueCompiler.compileTemplate({
+      source: desc.template.content
+    })
+    console.log("template", template);
+  </script>
+</body>
+</html>

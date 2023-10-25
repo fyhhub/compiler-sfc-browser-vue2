@@ -1,0 +1,35 @@
+{
+  "name": "compiler-vue2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./index.umd.js",
+  "module": "./index.esm.js",
+  "typings": "./compiler-sfc.d.ts",
+  "types": "./compiler-sfc.d.ts",
+  "scripts": {
+    "build": "rollup -c rollup.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/parser": "^7.23.0",
+    "@vue/compiler-sfc": "^2.7.15",
+    "less": "^3.13.1",
+    "postcss": "^8.4.31",
+    "source-map-js": "^1.0.2"
+  },
+  "files": [
+    "less.js",
+    "dist",
+    "compiler-sfc.js",
+    "compiler-sfc.d.ts",
+    "index.html"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "rollup": "^4.1.4",
+    "rollup-plugin-polyfill-node": "^0.12.0"
+  }
+}
