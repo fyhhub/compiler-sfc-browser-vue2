@@ -10,9 +10,14 @@
 ## 安装
 ```
 npm i compiler-sfc-browser-vue2
-
 ```
 
+## CDN
+```
+https://cdn.jsdelivr.net/npm/compiler-sfc-browser-vue2@0.0.2/dist/index.esm.js // esm-browser
+
+https://cdn.jsdelivr.net/npm/compiler-sfc-browser-vue2@0.0.2/dist/index.umd.js // umd
+```
 
 ## 使用
 ```js
