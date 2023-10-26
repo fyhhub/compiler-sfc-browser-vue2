@@ -1,4 +1,4 @@
-# vue2-compiler-sfc-browser
+# compiler-sfc-browser-vue2
 
 
 支持 `Vue2.6` 和 `Vue2.7` 在运行时的编译, 阉割了部分功能，但能满足绝大部分需求
@@ -9,13 +9,14 @@
 
 ## 安装
 ```
-npm i vue2-compiler-sfc-browser
+npm i compiler-sfc-browser-vue2
+
 ```
 
 
 ## 使用
 ```js
-import { parse, compileStyle, compileScript, compileTemplate } from 'vue2-compiler-sfc-browser'
+import { parse, compileStyle, compileScript, compileTemplate } from 'compiler-sfc-browser-vue2'
 const desc = parse({
   source: `
   <template>
