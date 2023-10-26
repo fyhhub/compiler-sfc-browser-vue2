@@ -1,6 +1,6 @@
 {
   "name": "compiler-sfc-browser-vue2",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "支持 Vue2.6 和 Vue2.7 在运行时的编译",
   "homepage": "https://github.com/fyhhub/compiler-sfc-browser-vue2",
   "main": "./dist/index.umd.js",
