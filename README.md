@@ -1,7 +1,7 @@
 # compiler-sfc-browser-vue2
 
 
-支持 `Vue2.6` 和 `Vue2.7` 在运行时的编译, 阉割了部分功能，但能满足绝大部分需求
+支持 `Vue2.6` 和 `Vue2.7` 在浏览器运行时的编译, 阉割了部分功能，但能满足绝大部分需求
 
 暂时缺少以下功能：
 + style lang 不支持 scss、stylus， 仅支持less(可提issue)
